@@ -537,20 +537,21 @@ Operational verification checklist:
 
 ## Screenshots To Capture
 
-Recommended demo evidence:
+Store final demo images in the root `screenshots/` directory:
 
-- Chat console with provider selector visible.
-- Streaming response in progress.
-- Conversation list/resume/cancel behavior.
-- Telemetry inspector showing status, ingestion state, event ID, trace ID, and request ID.
-- Dashboard throughput and latency charts.
-- Dashboard provider health and error-rate panels.
-- Recent inference timeline with Gemini and OpenAI rows.
-- Trace inspector with copyable IDs.
-- Supabase `inference_logs` rows.
-- Supabase `ingestion_events` rows with `processed` state.
-- API structured logs showing `inference_started`, `inference_failed`, or `inference_completed`.
-- Kubernetes manifests showing API/frontend/dashboard/Postgres/ingress resources.
+- `screenshots/dashboard-overview.png`
+- `screenshots/inference-timeline.png`
+- `screenshots/telemetry-inspector.png`
+- `screenshots/chat-console.png`
+- `screenshots/streaming-response.png`
+- `screenshots/provider-health.png`
+- `screenshots/supabase-inference-logs.png`
+- `screenshots/supabase-ingestion-events.png`
+- `screenshots/kubernetes-manifests.png`
+- `screenshots/docker-compose.png`
+- `screenshots/architecture-diagram.png`
+
+See `screenshots/README.md` for the capture checklist and exact naming convention.
 
 ## Engineering Tradeoffs
 
