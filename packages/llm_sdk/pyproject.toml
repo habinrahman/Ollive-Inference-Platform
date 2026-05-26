@@ -1,0 +1,12 @@
+[project]
+name = "ollive-llm-sdk"
+version = "0.1.0"
+description = "Lightweight provider abstraction and telemetry wrapper for Ollive inference calls."
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27.0",
+  "pydantic>=2.7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]

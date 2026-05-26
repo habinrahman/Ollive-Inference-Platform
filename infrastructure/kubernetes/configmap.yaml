@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ollive-config
+  namespace: ollive
+  labels:
+    app.kubernetes.io/part-of: ollive-inference-platform
+data:
+  API_CORS_ORIGINS: "https://chat.ollive.local,https://dashboard.ollive.local"
+  INGESTION_ENDPOINT: "http://ollive-api:8000/v1/ingest/events"
+  DATABASE_SSL: "false"
+  DATABASE_SSL_MODE: "disable"
+  DATABASE_PREPARED_STATEMENT_CACHE_SIZE: "100"
+  GEMINI_MODEL: "gemini-2.0-flash"
+  OPENAI_MODEL: "gpt-4o-mini"
+  ALLOW_MOCK_PROVIDER: "true"
+  NEXT_PUBLIC_API_BASE_URL: "https://api.ollive.local"
+  NEXT_PUBLIC_CHAT_URL: "https://chat.ollive.local"
+  NEXT_PUBLIC_DASHBOARD_URL: "https://dashboard.ollive.local"

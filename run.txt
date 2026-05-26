@@ -1,0 +1,12 @@
+# 1. Start API
+.\infrastructure\scripts\run_api.ps1 -Port 5500
+
+# 2. Start chat frontend
+.\infrastructure\scripts\run_frontend.ps1 -Port 3000
+
+# 3. Start dashboard
+.\infrastructure\scripts\run_dashboard.ps1 -Port 3001
+
+Chat:      http://localhost:3000
+Dashboard: http://localhost:3001
+API docs:  http://localhost:5500/docs
