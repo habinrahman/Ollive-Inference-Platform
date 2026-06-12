@@ -603,6 +603,8 @@ Supabase-managed PostgreSQL reduces operational database overhead for a take-hom
 
 ## Summary
 
+OPENSOURCE
+
 This project is a compact version of an internal AI platform: it runs a real chat workload, wraps provider calls in an SDK boundary, emits normalized telemetry, processes ingestion asynchronously, persists both raw and normalized observability data, and exposes an operational dashboard for debugging provider behavior and inference performance.
 
 The value is not the chatbot alone. The value is the platform boundary around inference execution: traceability, normalized telemetry, failure isolation, provider abstraction, persistence, and operational visibility.
